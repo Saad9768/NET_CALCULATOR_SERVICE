@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.gsg.calculator.data.TaxRateProvider;
 import com.gsg.calculator.service.NetCalculatorService;
-import com.gsg.calculator.service.NetCalculatorServiceImplTest;
 
 @Service
 public class NetCalculatorServiceImpl implements NetCalculatorService {
