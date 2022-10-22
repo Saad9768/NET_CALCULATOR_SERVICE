@@ -11,6 +11,7 @@ import com.java.gsg.calculator.service.NetCalculatorService;
 @Service
 public class NetCalculatorServiceImpl implements NetCalculatorService {
 
+	// calculate net price from the gross price according to country
 	@Override
 	public Double calculateNetPrice(Double grossPrice, TaxRateProvider countryIso) {
 		if (grossPrice != null && grossPrice.equals(0.0)) {
@@ -18,7 +19,9 @@ public class NetCalculatorServiceImpl implements NetCalculatorService {
 			return 0.0;
 		} else if (grossPrice != null) {
 			Double result = grossPrice / (1 + countryIso.getValue());
-			return BigDecimal.valueOf(result).setScale(2, RoundingMode.HALF_UP).doubleValue();
+			// precision is set to 2 because in the actual financial world we use upto 2
+			int precision = 2;
+			return BigDecimal.valueOf(result).setScale(precision, RoundingMode.HALF_UP).doubleValue();
 		} else {
 			return null;
 		}
