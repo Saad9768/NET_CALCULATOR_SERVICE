@@ -18,7 +18,7 @@ public class NetCalculatorServiceImpl implements NetCalculatorService {
 			// This logic will return zero. Consumer will handled zero accordingly
 			return 0.0;
 		} else if (grossPrice != null) {
-			Double result = grossPrice / (1 + countryIso.getValue());
+			Double result = grossPrice / (1 + countryIso.getValue() * 0.01);
 			// precision is set to 2 because in the actual financial world we use upto 2
 			int precision = 2;
 			return BigDecimal.valueOf(result).setScale(precision, RoundingMode.HALF_UP).doubleValue();

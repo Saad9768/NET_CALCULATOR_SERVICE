@@ -1,8 +1,8 @@
 package com.java.gsg.calculator.data;
 
 public enum TaxRateProvider {
-
-	DE(0.19), FR(0.20), IN(0.18);
+	// value against the country are in percentage; For example the tax in Germany is 19 % 
+	DE(19.0), FR(20.0), IN(18.0);
 
 	private Double value;
 
