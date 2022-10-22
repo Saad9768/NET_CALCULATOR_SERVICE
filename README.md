@@ -7,6 +7,13 @@ Run the service.
 2) Run mvn clean package to generate jar file
 3) java -jar 'path to the jar file'
 
+How to use this service ?
+Here is an example after you run the jar file
+http://localhost:8080/v1/api/calculate/netamount?grossPrice=100.0&countryIso=DE
+
+1) where 100 is the gross price
+2) DE is country code
+
 Have a look at the swagger 
 1) UI: http://localhost:8080/swagger-ui.html
 2) Docs: http://localhost:8080/v2/api-docs
@@ -25,4 +32,3 @@ Take an example here
 2) Tax on net price for Germany (DE) : (19% = 0.19)
 3) Net price : 100
 4) Formula will be grossPrice/ (1 + (19% = 0.19))
-
