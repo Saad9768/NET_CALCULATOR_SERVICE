@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.java.gsg.calculator.data.TaxRateProvider;
-import com.java.gsg.calculator.service.NetCalculatorService;
 
 @SpringBootTest
 public class NetCalculatorServiceImplTest {
