@@ -18,6 +18,8 @@ How is the Tax Calculation Done ? Point to remember is that Tax is always calcul
 1) grossPrice = netprice + Tax% * netPrice;
 2) netprice = grossPrice(1 + 0.01 * Tax)
 
+TaxRateProvider Enum will map the country tax with code. Currently only 3 countries are mapped.
+
 Take an example here
 1) Gross price : 119
 2) Tax on net price for Germany (DE) : (19% = 0.19)
