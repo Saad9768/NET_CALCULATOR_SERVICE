@@ -15,6 +15,7 @@ Details about the calculator service
 
 For example 
 
-Gross price : 119
-Tax on net price : 19% (0.19)
-Net price : 100
+1) Gross price : 119
+2) Tax on net price : 19% (0.19)
+3) Net price : 100
+
