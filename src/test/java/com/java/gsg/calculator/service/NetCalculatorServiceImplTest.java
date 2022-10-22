@@ -15,10 +15,25 @@ public class NetCalculatorServiceImplTest {
 	private NetCalculatorService netCalculatorService;
 
 	@Test
-	public void calculateNetPrice() {
+	public void calculateNetPriceDE() {
 
 		Double result = netCalculatorService.calculateNetPrice(100.0, TaxRateProvider.DE);
 		Assertions.assertEquals(result, 84.03);
+
+	}
+	
+	@Test
+	public void calculateNetPriceFR() {
+
+		Double result = netCalculatorService.calculateNetPrice(120.0, TaxRateProvider.FR);
+		Assertions.assertEquals(result, 100);
+
+	}
+	@Test
+	public void calculateNetPriceIN() {
+
+		Double result = netCalculatorService.calculateNetPrice(118.0, TaxRateProvider.IN);
+		Assertions.assertEquals(result, 100);
 
 	}
 
