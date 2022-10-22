@@ -1,4 +1,4 @@
-package com.java.gsg.calulator.model;
+package com.java.gsg.calculator.model;
 
 public class ResponseObject {
 

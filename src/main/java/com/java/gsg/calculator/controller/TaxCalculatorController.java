@@ -1,4 +1,4 @@
-package com.java.gsg.calulator.controller;
+package com.java.gsg.calculator.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.java.gsg.calulator.data.TaxRateProvider;
-import com.java.gsg.calulator.model.ResponseObject;
-import com.java.gsg.calulator.service.NetCalculatorService;
+import com.java.gsg.calculator.data.TaxRateProvider;
+import com.java.gsg.calculator.model.ResponseObject;
+import com.java.gsg.calculator.service.NetCalculatorService;
 
 @RestController
 @RequestMapping("/v1/api")

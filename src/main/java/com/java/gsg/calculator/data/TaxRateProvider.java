@@ -1,4 +1,4 @@
-package com.java.gsg.calulator.data;
+package com.java.gsg.calculator.data;
 
 public enum TaxRateProvider {
 
