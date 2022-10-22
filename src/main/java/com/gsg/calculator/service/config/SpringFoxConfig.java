@@ -1,4 +1,4 @@
-package com.java.gsg.calculator.service.config;
+package com.gsg.calculator.service.config;
 
 import org.springframework.context.annotation.Configuration;
 

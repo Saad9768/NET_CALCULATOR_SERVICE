@@ -1,11 +1,12 @@
-package com.java.gsg.calculator.service;
+package com.gsg.calculator.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.java.gsg.calculator.data.TaxRateProvider;
+import com.gsg.calculator.data.TaxRateProvider;
+import com.gsg.calculator.service.NetCalculatorService;
 
 @SpringBootTest
 public class NetCalculatorServiceImplTest {

@@ -1,4 +1,4 @@
-package com.java.gsg.calculator;
+package com.gsg.calculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

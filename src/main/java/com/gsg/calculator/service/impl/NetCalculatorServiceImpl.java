@@ -1,12 +1,12 @@
-package com.java.gsg.calculator.service.impl;
+package com.gsg.calculator.service.impl;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 import org.springframework.stereotype.Service;
 
-import com.java.gsg.calculator.data.TaxRateProvider;
-import com.java.gsg.calculator.service.NetCalculatorService;
+import com.gsg.calculator.data.TaxRateProvider;
+import com.gsg.calculator.service.NetCalculatorService;
 
 @Service
 public class NetCalculatorServiceImpl implements NetCalculatorService {

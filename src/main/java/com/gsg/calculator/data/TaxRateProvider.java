@@ -1,4 +1,4 @@
-package com.java.gsg.calculator.data;
+package com.gsg.calculator.data;
 
 public enum TaxRateProvider {
 	// value against the country are in percentage; For example the tax in Germany is 19 % 
