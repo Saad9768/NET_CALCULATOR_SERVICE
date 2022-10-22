@@ -6,6 +6,7 @@ Run the service.
 1) Clone the repo.
 2) Run mvn clean package to generate jar file
 3) java -jar 'path to the jar file'
+4) For development purpose if one want to start the application, One can start mvn spring-boot:run
 
 How to use this service ?
 Here is an example after you run the jar file
