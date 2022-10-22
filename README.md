@@ -8,8 +8,8 @@ Run the service.
 3) java -jar 'path to the jar file'
 
 Have a look at the swagger 
-UI: http://localhost:8080/swagger-ui.html
-Docs: http://localhost:8080/v2/api-docs
+1) UI: http://localhost:8080/swagger-ui.html
+2) Docs: http://localhost:8080/v2/api-docs
 
 Details about the calculator service
 
