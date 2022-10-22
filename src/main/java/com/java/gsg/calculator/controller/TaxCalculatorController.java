@@ -24,6 +24,11 @@ public class TaxCalculatorController {
 			@RequestParam TaxRateProvider countryIso) {
 		ResponseObject responseObject = new ResponseObject();
 		try {
+			if (grossPrice.equals(0.0)) {
+				responseObject.setStatus("Bad Reuest");
+				responseObject.setError("Value should greater than zero");
+				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseObject);
+			}
 			Double result = netCalculatorService.calculateNetPrice(grossPrice, countryIso);
 			if (result != null) {
 				responseObject.setStatus("Success");
@@ -31,7 +36,7 @@ public class TaxCalculatorController {
 				return ResponseEntity.status(HttpStatus.OK).body(responseObject);
 			} else {
 				responseObject.setStatus("Bad Reuest");
-				responseObject.setError("Value should greater than zero");
+				responseObject.setError("Value should not be null");
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseObject);
 			}
 		} catch (Exception e) {
