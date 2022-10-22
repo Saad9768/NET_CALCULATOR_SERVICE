@@ -14,6 +14,9 @@ http://localhost:8080/v1/api/calculate/netamount?grossPrice=100.0&countryIso=DE
 
 1) where 100 is the gross price
 2) DE is country code
+Response will be either success or Error
+1) Success will give you the netPrice
+2) Error will provide the appropriate Error with status code
 
 Have a look at the swagger 
 1) UI: http://localhost:8080/swagger-ui.html
