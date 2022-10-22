@@ -1,5 +1,7 @@
 package com.gsg.calculator.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +17,7 @@ import com.gsg.calculator.service.NetCalculatorService;
 @RestController
 @RequestMapping("/v1/api")
 public class TaxCalculatorController {
+	Logger logger = LoggerFactory.getLogger(TaxCalculatorController.class);
 	@Autowired
 
 	private NetCalculatorService netCalculatorService;
@@ -24,6 +27,7 @@ public class TaxCalculatorController {
 			@RequestParam TaxRateProvider countryIso) {
 		ResponseObject responseObject = new ResponseObject();
 		try {
+			logger.info("/v1/api/calculate/netamount");
 			if (grossPrice.equals(0.0)) {
 				responseObject.setStatus("Bad Reuest");
 				responseObject.setError("Value should greater than zero");
@@ -40,6 +44,8 @@ public class TaxCalculatorController {
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseObject);
 			}
 		} catch (Exception e) {
+			logger.error("Error in /v1/api/calculate/netamount");
+			logger.error(e.getMessage());
 			responseObject.setStatus("Failure");
 			responseObject.setError(e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(responseObject);
