@@ -16,6 +16,7 @@ Details about the calculator service
 For example 
 
 1) Gross price : 119
-2) Tax on net price : 19% (0.19)
+2) Tax on net price for Germany (DE) : 19% (0.19)
 3) Net price : 100
+4) Formula will be 119/1.19 = 100
 
