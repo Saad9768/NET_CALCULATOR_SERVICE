@@ -27,7 +27,7 @@ Details about the calculator service
 How is the Tax Calculation Done ? Point to remember is that Tax is always calculated on Net price.
 
 1) grossPrice = netprice + Tax% * netPrice;
-2) netprice = grossPrice(1 + 0.01 * Tax)
+2) netprice = grossPrice/(1 + 0.01 * Tax)
 
 TaxRateProvider Enum will map the country tax with code. Currently only 3 countries are mapped.
 
